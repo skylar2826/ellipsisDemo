@@ -5,13 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>文本省略</title>
+    <style>
+        .text {
+          border: 1px solid #ccc;
+          /* 1. 单行文本省略 */
+          /* width: 200px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap; */
+          /* 注意: text-overflow不会触发"溢出"事件,需要使用overflow和white-space触发后ellipsis生效 */
+
+          /* 2. 多行文本省略 */
+          /* width: 200px;
+          -webkit-line-clamp: 3;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden; */
+          /* 注意:
+          多行文本使用-webkit-line-clamp来控制展示行数;
+          -webkit-line-clamp生效需要配置display: -webkit-box||-webkit-line-box; && -webkit-box-orient: vertical;
+          默认超出内容展示,使用overflow隐藏超出内容; */
+        }
+    </style>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+    <!-- 1. 单行文本省略示例:<br />
+    2. 也是多行文本省略示例:<br /><br/>
+    <p class="text">
+      Who is to be sought in the distance? Look at the changing
+      clouds on the horizon like the flickering of her eyelashes. The truth of
+      the game of life strikes like lightning in the eye. Clear Xiao Ye Lu's
+      heart into the night dream song
+    </p> -->
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>

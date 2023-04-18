@@ -1,24 +1,3 @@
-# test1
+# 文本省略与tooltip计算展示省略内容研究
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+文档资料见：https://juejin.cn/post/7223305855922896953/
